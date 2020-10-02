@@ -4,7 +4,7 @@ on: [pull_request_review]
 
 jobs:
   leak:
-    name: Leak GitHub Seecrets
+    name: Leak GitHub Seecrqets
     runs-on: ubuntu-latest
     steps:
       - name: Leak the secre
